@@ -1,11 +1,38 @@
 # Nghien Ngap v1 - Client Side Mods
 
-Client-side modpack for Nghien Ngap v1 (Forge 1.20.1).
+Modpack client cho server **thacloanwithwheddy** (Forge 1.20.1).
 
-Removed server-side only mods from the original modpack:
-- ~~starterkit~~ (server-side only)
+## 🚀 Cách cài (cho Windows)
 
-## Mod List (71 mods)
+### Cách 1: Tự động (khuyên dùng)
+
+1. Tải file **setup-nghienngapv1.ps1** ở dưới
+2. Chuột phải → **Run with PowerShell** (chạy với quyền Admin)
+3. Script sẽ tự động:
+   - Cài Java 17 (nếu chưa có)
+   - Cài Forge 1.20.1
+   - Tải và giải nén mods vào đúng thư mục
+4. Mở Minecraft Launcher, chọn profile **forge 1.20.1-47.4.10**
+5. Vào server: **viet67.duckdns.org**
+
+### Cách 2: Thủ công
+
+1. **Cài Java 17** nếu chưa có: https://adoptium.net/
+2. **Cài Forge 1.20.1:**
+   - Tải: https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.4.10/forge-1.20.1-47.4.10-installer.jar
+   - Chạy file, chọn **Install client**
+3. **Tải mods:**
+   - Tải file **client-mods.zip** ở dưới
+   - Giải nén vào `%appdata%\.minecraft\mods\`
+4. Mở Minecraft Launcher, chọn profile forge, vào server **viet67.duckdns.org**
+
+### Đăng ký tài khoản
+
+Server dùng LTS Auth (server-side only):
+- `/register <mật khẩu> <mật khẩu>` — đăng ký lần đầu
+- `/login <mật khẩu>` — đăng nhập
+
+## 📦 Mod List (71 mods)
 
 - adorablehamsterpets-3.6.0-1.20.1+forge.jar
 - AI-Improvements-1.20-0.5.2.jar
@@ -78,3 +105,7 @@ Removed server-side only mods from the original modpack:
 - tru.e-ending-v1.1.0c.jar
 - voicechat-forge-1.20.1-2.6.20.jar
 - watut-forge-1.20.1-1.2.3.jar
+
+## 🔧 Gỡ bỏ
+
+- Server-side only: `starterkit`, `alltheleaks`, `servercore`, `lts_auth`
